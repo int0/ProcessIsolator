@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\shared">
+      <UniqueIdentifier>{15292cdb-e86d-40ae-91dd-ee02702ae8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\Lpc">
+      <UniqueIdentifier>{0b8b0d1f-4c26-4e65-9daa-b7956b6e37c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\Lpc\LpcClient">
+      <UniqueIdentifier>{cb2cc62a-5521-4baa-9cc8-05a640a7cced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\Lpc\LpcServer">
+      <UniqueIdentifier>{f0130304-0b84-48c4-8d27-5f11e59f6a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\nt">
+      <UniqueIdentifier>{03f1b8d2-9d97-4488-9eae-b60847162831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\Log">
+      <UniqueIdentifier>{38db87e1-10d3-4e8f-b8d0-8bd4326caea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\mem">
+      <UniqueIdentifier>{72888f9d-7142-4d76-9fec-867d89c9e54c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\thread">
+      <UniqueIdentifier>{c3b71e77-e82f-48b3-8446-526e714f5f60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\pi">
+      <UniqueIdentifier>{d2fe60f4-1c56-4606-a0ca-139ec4c0cef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pi">
+      <UniqueIdentifier>{9f84eb52-dd0b-498e-b1c5-df1c42cac645}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mem">
+      <UniqueIdentifier>{80eeca8d-78e5-4be6-99a7-6ca87a0af82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nt">
+      <UniqueIdentifier>{b9e5e7dc-24d5-48cf-bacf-6e936668584a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\shared\lpc\nt_lpc.h">
+      <Filter>Source Files\shared\Lpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\nt\nt_names_win7_x64.h">
+      <Filter>Source Files\shared\nt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lpc\pi_lpc_client.h">
+      <Filter>Source Files\shared\Lpc\LpcClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lpc\pi_lpc_common.h">
+      <Filter>Source Files\shared\Lpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lpc\pi_lpc_server.h">
+      <Filter>Source Files\shared\Lpc\LpcServer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\log\pi_log.h">
+      <Filter>Source Files\shared\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\mem\pi_memory.h">
+      <Filter>Source Files\shared\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\pi\pi.h">
+      <Filter>Source Files\shared\pi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\pi\pi_ioctl.h">
+      <Filter>Source Files\shared\pi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\pi\pi_types.h">
+      <Filter>Source Files\shared\pi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\thread\pi_thread.h">
+      <Filter>Source Files\shared\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="pi\pi_server.h">
+      <Filter>Source Files\pi</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\pi_new.h">
+      <Filter>Source Files\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="pi\pi_drv.h">
+      <Filter>Source Files\pi</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pi_svc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\nt\nt_names_win7_x64.cpp">
+      <Filter>Source Files\shared\nt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lpc\pi_lpc_client.cpp">
+      <Filter>Source Files\shared\Lpc\LpcClient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lpc\pi_lpc_common.cpp">
+      <Filter>Source Files\shared\Lpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lpc\pi_lpc_server.cpp">
+      <Filter>Source Files\shared\Lpc\LpcServer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\log\pi_log.cpp">
+      <Filter>Source Files\shared\Log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\mem\pi_memory.cpp">
+      <Filter>Source Files\shared\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\thread\pi_thread.cpp">
+      <Filter>Source Files\shared\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\pi_server.cpp">
+      <Filter>Source Files\pi</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\pi_new.cpp">
+      <Filter>Source Files\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\pi_drv.cpp">
+      <Filter>Source Files\pi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\nt\nt_svc_args.cpp">
+      <Filter>Source Files\shared\nt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="history.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

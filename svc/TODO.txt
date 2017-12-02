@@ -1,0 +1,19 @@
+Convert reg context to params array
+
+
+
+
+
+1) File/Disk redirection ( remove WRITE access from disk/partition, IO Scsi )
+2) Registry redirection ( Use HIVE )
+3) Process/Memory protection ( no injects )
+4) Protection against NtShutdownSystem, ExitWindows
+5) Windows protection against WM_CLOSE, etc
+6) Network protection
+
+
+
+
+
+Qt/C# GUI for monitoring of isolated processes
+Qt/C# GUI for opening SysCall log and creating signatures

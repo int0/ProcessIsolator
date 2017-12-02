@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Driver Files">
+      <UniqueIdentifier>{8E41214B-6785-4CFE-B992-037D68949A14}</UniqueIdentifier>
+      <Extensions>inf;inv;inx;mof;mc;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\shared">
+      <UniqueIdentifier>{f6d1b270-90dd-40c0-998d-0e16c24ceb67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\log">
+      <UniqueIdentifier>{fbd55c4e-3ae1-4240-aa6b-1a09fded8c12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\mem">
+      <UniqueIdentifier>{aba421c2-f89e-4600-9697-e0fd2ce7d840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pi">
+      <UniqueIdentifier>{bb059b10-d6bc-49e7-b7f0-e5446034b0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\asm">
+      <UniqueIdentifier>{bf978de2-ea40-4fce-ba27-0b5189db26a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\asm\i386">
+      <UniqueIdentifier>{dfc27073-5738-46f4-bfa2-c851dfb7307c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\asm\amd64">
+      <UniqueIdentifier>{1aae214c-d152-4025-9b5d-c74d8ad4dd58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\nt">
+      <UniqueIdentifier>{b6dc8851-5be3-42d4-8d19-62b0cf011136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\lpc">
+      <UniqueIdentifier>{9cede20b-93eb-441b-b4f3-ec573d04cab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\pi">
+      <UniqueIdentifier>{24ef64e0-a351-4d21-98a4-3efe7b10e811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pi\cpu">
+      <UniqueIdentifier>{f2c53a8f-8918-413a-b94b-3e2325d76828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pi\msr">
+      <UniqueIdentifier>{badeff4d-eacc-432a-b4ff-8c02b8f80495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pi\trap">
+      <UniqueIdentifier>{95e4d595-66a2-4253-a5ea-1954c3e4eeb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\shared\thread">
+      <UniqueIdentifier>{7de70f50-f50d-4134-8df9-3ad044552ff9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Inf Include="prociso.inf">
+      <Filter>Driver Files</Filter>
+    </Inf>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="prociso.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="prociso.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="nt\nt_helpers.cpp">
+      <Filter>Source Files\nt</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\cpu\pi_cpu.cpp">
+      <Filter>Source Files\pi\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\msr\pi_msr.cpp">
+      <Filter>Source Files\pi\msr</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\trap\pi_trap.cpp">
+      <Filter>Source Files\pi\trap</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\pi_operations.cpp">
+      <Filter>Source Files\pi</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\pi_process.cpp">
+      <Filter>Source Files\pi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\log\pi_log.cpp">
+      <Filter>Source Files\shared\log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\mem\pi_memory.cpp">
+      <Filter>Source Files\shared\mem</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\pi_global.cpp">
+      <Filter>Source Files\pi</Filter>
+    </ClCompile>
+    <ClCompile Include="pi\pi_pi.cpp">
+      <Filter>Source Files\pi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lpc\pi_lpc_client.cpp">
+      <Filter>Source Files\shared\lpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lpc\pi_lpc_common.cpp">
+      <Filter>Source Files\shared\lpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\lpc\pi_lpc_server.cpp">
+      <Filter>Source Files\shared\lpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\shared\thread\pi_thread.cpp">
+      <Filter>Source Files\shared\thread</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="nt\nt_hdr.h">
+      <Filter>Source Files\nt</Filter>
+    </ClInclude>
+    <ClInclude Include="nt\nt_helpers.h">
+      <Filter>Source Files\nt</Filter>
+    </ClInclude>
+    <ClInclude Include="pi\cpu\pi_cpu.h">
+      <Filter>Source Files\pi\cpu</Filter>
+    </ClInclude>
+    <ClInclude Include="pi\msr\pi_msr.h">
+      <Filter>Source Files\pi\msr</Filter>
+    </ClInclude>
+    <ClInclude Include="pi\trap\pi_trap.h">
+      <Filter>Source Files\pi\trap</Filter>
+    </ClInclude>
+    <ClInclude Include="pi\pi_process.h">
+      <Filter>Source Files\pi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\log\pi_log.h">
+      <Filter>Source Files\shared\log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\mem\pi_memory.h">
+      <Filter>Source Files\shared\mem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\pi\pi.h">
+      <Filter>Source Files\shared\pi</Filter>
+    </ClInclude>
+    <ClInclude Include="pi\pi_pi.h">
+      <Filter>Source Files\pi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lpc\nt_lpc.h">
+      <Filter>Source Files\shared\lpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lpc\pi_lpc_client.h">
+      <Filter>Source Files\shared\lpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lpc\pi_lpc_common.h">
+      <Filter>Source Files\shared\lpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\lpc\pi_lpc_server.h">
+      <Filter>Source Files\shared\lpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\shared\thread\pi_thread.h">
+      <Filter>Source Files\shared\thread</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="asm\amd64\trap.asm">
+      <Filter>Source Files\asm\amd64</Filter>
+    </MASM>
+    <MASM Include="asm\i386\trap.asm">
+      <Filter>Source Files\asm\i386</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
